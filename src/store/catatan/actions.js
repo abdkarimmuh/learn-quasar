@@ -11,7 +11,7 @@ const createCatatan = ({ commit, state }, payload) => {
   }
 };
 
-const doneCatatan = ({ commit }, payload) => {
+const updateCatatan = ({ commit }, payload) => {
   commit("updateCatatan", payload);
 };
 
@@ -19,4 +19,4 @@ const deleteCatatan = ({ commit }, index) => {
   commit("deleteCatatan", index);
 };
 
-export { createCatatan, doneCatatan, deleteCatatan };
+export { createCatatan, updateCatatan, deleteCatatan };

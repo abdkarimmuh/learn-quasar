@@ -42,7 +42,7 @@
                 <q-btn
                   flat
                   @click="
-                    doneCatatan({
+                    updateCatatan({
                       index: index,
                       updates: { completed: !item.completed }
                     })
@@ -75,7 +75,11 @@ export default {
     };
   },
   methods: {
-    ...mapActions("catatan", ["doneCatatan", "createCatatan", "deleteCatatan"]),
+    ...mapActions("catatan", [
+      "updateCatatan",
+      "createCatatan",
+      "deleteCatatan"
+    ]),
     save() {
       this.loading = true;
 
